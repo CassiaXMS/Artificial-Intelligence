@@ -6,4 +6,6 @@ Este repositório é dedicado aos códigos em Python aplicando técnicas de IA n
 
 
 ## Busca A*
-<a href="https://ibb.co/jMKpZC9"><img align="right" src="https://i.ibb.co/jMKpZC9/download20230402231335.png" alt="download20230402231335"  width="150" height="150" border="0"></a>
+Aqui está um mapa e a tabela com as cidades e suas distâncias:
+
+<img align="center" src="https://github.com/CassiaXMS/Inteligencia_Artificial/blob/main/mapa_portoUniao_Curitiba.jpeg" alt="map"  width="800" height="500" >

@@ -1,21 +1,52 @@
-# Inteligencia_Artificial
-Este repositório é dedicado aos códigos em Python aplicando técnicas de IA na solução de problemas.
+<h1 align="center">
+    <a>🔗 Artificial Intelligence </a>
+</h1>
+
+> [!NOTE]
+>  Este repositório é dedicado aos códigos em Python aplicando técnicas de IA na solução de problemas.
+> Todo o conteúdo é baseado no aprendizado visto em sala de aula ministrado pelo professor na disciplina de IA _(FATEC Campinas, 6°sem ADS)._
+
+---
+
+## 🏷️ Conteúdo
+
+- [Algoritmos de Busca](#algoritmos-de-busca)
+
+---
 
 # Algoritmos de Busca
+Existem muitos algoritmos de buscas, e é claro cada um possui suas vantagens e desvantagens isso irá depender do problema a ser resolvido analisando os fatores e quais entre eles é o mais indicado.
 
+Neste repositório, iremos abordar com exemplos práticos dois algoritmos de busca informada:
+- **Algoritmos de busca informada:**
+    Os algoritmos de busca informada ou de **heurística** utiliza dados adicionais, entre eles a heurística que são estimativas de prioridade influenciando a eficiência do algoritmo de busca.
 
+  Veremos o algoritmo de **Busca Gulosa(Greedy Search)** e **Busca A*** _(Lê-se: A estrela)_
+---
 
-Aqui está um mapa contendo algumas cidades da regiião Sul do Brasil e suas relativas distâncias entre elas e a tabela com as distâncias em 
-linha reta.
+- ## Algoritmo de Busca Gulosa
+    Seleciona o próximo nó **com base na heurística** que estima o custo restante até o objetivo, **sem considerar o custo acumulado**.
+
+- ## Algoritmo de Busca A*
+    Combina o custo acumulado com a heurística, garantindo a solução mais curta, desde que a heurística seja admissível.
+    Utiliza um cálculo de avaliação 𝑓(𝑛) = 𝑔(𝑛) + ℎ(𝑛), onde 𝑔(𝑛) é o custo acumulado do caminho até o nó atual e ℎ(𝑛)
+    é a heurística que estima o custo até o objetivo.
+---
+
+## Exemplo
+
+Aqui está um mapa contendo algumas cidades da região Sul do Brasil informando as suas relativas distâncias entre elas. Ao lado a tabela com as distâncias em linha reta. 
+
 
 <img align="center" src="https://github.com/CassiaXMS/Inteligencia_Artificial/blob/main/mapa_portoUniao_Curitiba.jpeg" alt="map"  width="800" height="500" >
+
+
 
 # 📌 Objetivo
 **_O desafio é o seguinte:_** com base nos dados do mapa e da tabela, qual será a rota onde a cidade de origem é **Porto União** e o cidade final é **Curitiba**. 
 Utilizando algoritmo por meio de busca.
 
 ### Algoritmo de Busca A*
-Vamos começar com o algoritmo de busca A*. Segue os passos:
 
 #### Grafo
 > Definir a estrutura do grafo com os **nós** (vértices, são as cidades) e as **arestas** (ligações) contendo as

@@ -43,7 +43,7 @@ Aqui está um mapa contendo algumas cidades da região Sul do Brasil informando 
 **_O desafio é o seguinte:_** 
 
 com base nos dados do mapa e da tabela, qual será a rota onde a cidade de origem é **Porto União** e o cidade final é **Curitiba**. 
-Utilizando algoritmo por meio de busca. Vamos começar a resolução pelo algoritmo de Busca A*. Caso queira visualizar o arquivo do exercício completo, [clique aqui](./algoritmosBusca).
+Utilizando algoritmo por meio de busca. Vamos começar a resolução pelo algoritmo de Busca A*. Caso queira visualizar o arquivo do exercício completo, [clique aqui](./algoritmosBusca/PortoUniao_Curitiba_BuscaA_.ipynb).
 
 ### Algoritmo de Busca A*
 
@@ -167,7 +167,7 @@ print("Distância total:", distancia_total, "km")
 ### Algoritmo de Busca Gulosa
 Agora vamos resolver o mesmo exercício, mas com o algoritmo de Busca Gulosa.
 
-Da mesma forma que o algoritmo anterior é preciso criar primeiramente os dicionários de dados para o grafo e as heurísticas. Para visulizar o código completo, [clique aqui]().
+Da mesma forma que o algoritmo anterior é preciso criar primeiramente os dicionários de dados para o grafo e as heurísticas. Para visulizar o código completo, [clique aqui]((./algoritmosBusca/PortoUniao_Curitiba_BuscaA_.ipynb).).
 
 ```python
 def busca_gulosa(grafo, heuristica, inicio, objetivo):

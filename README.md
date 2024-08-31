@@ -3,7 +3,7 @@
 </h1>
 
 > [!NOTE]
->  Este repositório é dedicado aos códigos em Python aplicando técnicas de IA na solução de problemas.
+>  Este repositório é dedicado aos algoritmos em Python aplicando técnicas de IA na solução de problemas.
 > Todo o conteúdo é baseado no aprendizado visto em sala de aula ministrado pelo professor na disciplina de IA _(FATEC Campinas, 6°sem ADS)._
 
 ---
@@ -15,7 +15,7 @@
 ---
 
 # Algoritmos de Busca
-Existem muitos algoritmos de buscas, e é claro cada um possui suas vantagens e desvantagens isso irá depender do problema a ser resolvido analisando os fatores e quais entre eles é o mais indicado.
+Existem muitos algoritmos de buscas, e é claro cada um possui suas vantagens e desvantagens isso irá depender do problema a ser resolvido e com base na análise dos fatores quais entre eles é o mais indicado.
 
 Neste repositório, iremos abordar com exemplos práticos dois algoritmos de busca informada:
 - **Algoritmos de busca informada:**
@@ -33,18 +33,17 @@ Neste repositório, iremos abordar com exemplos práticos dois algoritmos de bus
     é a heurística que estima o custo até o objetivo.
 ---
 
-## Exemplo
+## Exemplo 
 
 Aqui está um mapa contendo algumas cidades da região Sul do Brasil informando as suas relativas distâncias entre elas. Ao lado a tabela com as distâncias em linha reta. 
 
-
 <img align="center" src="https://github.com/CassiaXMS/Inteligencia_Artificial/blob/main/mapa_portoUniao_Curitiba.jpeg" alt="map"  width="800" height="500" >
 
-
-
 # 📌 Objetivo
-**_O desafio é o seguinte:_** com base nos dados do mapa e da tabela, qual será a rota onde a cidade de origem é **Porto União** e o cidade final é **Curitiba**. 
-Utilizando algoritmo por meio de busca.
+**_O desafio é o seguinte:_** 
+
+com base nos dados do mapa e da tabela, qual será a rota onde a cidade de origem é **Porto União** e o cidade final é **Curitiba**. 
+Utilizando algoritmo por meio de busca. Vamos começar a resolução pelo algoritmo de Busca A*. Caso queira visualizar o arquivo do exercício completo, [clique aqui](../algoritmosBusca/PortoUniao_Curitiba_BuscaA.ipynb).
 
 ### Algoritmo de Busca A*
 
@@ -155,6 +154,63 @@ caminho, distancia_total = a_estrela(grafo, heuristica, inicio, objetivo)
 print("Caminho encontrado:", caminho)
 print("Distância total:", distancia_total, "km")
 
-  
+```
+
+> Resultado Console
+
+```python
+  >>> Caminho encontrado: ['Porto União', 'São Mateus do Sul', 'Lapa', 'Contenda', 'Araucária', 'Curitiba']
+  >>> Distância total: 228 km
+```
+---
+
+### Algoritmo de Busca Gulosa
+Agora vamos resolver o mesmo exercício, mas com o algoritmo de Busca Gulosa.
+
+Da mesma forma que o algoritmo anterior é preciso criar primeiramente os dicionários de dados para o grafo e as heurísticas. Para visulizar o código completo, [clique aqui]().
+
+```python
+def busca_gulosa(grafo, heuristica, inicio, objetivo):
+    # Inicia o nó atual como o ponto de partida
+    atual = inicio
+    caminho = [atual]
+    distancia_total = 0
+
+    while atual != objetivo:
+        # Obtém os vizinhos do nó atual
+        vizinhos = grafo[atual]
+
+        # Escolhe o vizinho com a menor heurística
+        proximo = min(vizinhos, key=lambda n: heuristica[n])
+
+        # Atualiza a distância total
+        distancia_total += vizinhos[proximo]
+
+        # Move para o próximo nó
+        caminho.append(proximo)
+        atual = proximo
+
+    return caminho, distancia_total
+
+# Definindo os pontos de partida e objetivo
+inicio = 'Porto União'
+objetivo = 'Curitiba'
+
+# Executando a busca gulosa
+caminho, distancia_total = busca_gulosa(grafo, heuristica, inicio, objetivo)
+
+print("Caminho encontrado:", caminho)
+print("Distância total:", distancia_total, "km")
 
 ```
+
+> Resultado Console
+
+```python
+  >>> Caminho encontrado: ['Porto União', 'São Mateus do Sul', 'Palmeira', 'Campo Largo', 'Curitiba'] 
+  >>>Distância total: 248 km
+```
+---
+
+## Considerações
+

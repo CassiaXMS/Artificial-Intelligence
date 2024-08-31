@@ -167,7 +167,7 @@ print("Distância total:", distancia_total, "km")
 ### Algoritmo de Busca Gulosa
 Agora vamos resolver o mesmo exercício, mas com o algoritmo de Busca Gulosa.
 
-Da mesma forma que o algoritmo anterior é preciso criar primeiramente os dicionários de dados para o grafo e as heurísticas. Para visulizar o código completo, [clique aqui]((./algoritmosBusca/PortoUniao_Curitiba_BuscaA_.ipynb).).
+Da mesma forma que o algoritmo anterior é preciso criar primeiramente os dicionários de dados para o grafo e as heurísticas. Para visulizar o código completo, [clique aqui](./algoritmosBusca/PortoUniao_CuritibaBuscaGulosa.ipynb).
 
 ```python
 def busca_gulosa(grafo, heuristica, inicio, objetivo):
@@ -208,7 +208,7 @@ print("Distância total:", distancia_total, "km")
 
 ```python
   >>> Caminho encontrado: ['Porto União', 'São Mateus do Sul', 'Palmeira', 'Campo Largo', 'Curitiba'] 
-  >>>Distância total: 248 km
+  >>> Distância total: 248 km
 ```
 ---
 

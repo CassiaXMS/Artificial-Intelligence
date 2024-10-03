@@ -11,6 +11,7 @@
 ## 🏷️ Conteúdo
 
 - [Algoritmos de Busca](#algoritmos-de-busca)
+- [Machine Learning](#machine-learning)
 
 ---
 
@@ -214,3 +215,19 @@ print("Distância total:", distancia_total, "km")
 
 ## Considerações
 
+# Machine Learning
+Consiste em uma subárea da IA que se concentra no desenvolvimento de algoritmos e modelos estatísticos que permitem que os computadores realizem tarefas **sem serem explicitamente programados** para isso.
+
+Os algoritmos podem ser categorizados em **3 tipos** de acordo com o aprendizado por dados:
+
+- **Aprendizado Supervisionado:** possui rótulos conhecidos, ou seja para cada entrada no conjunto de dados, o resultado esperado é fornecido.
+    - Exemplo de aplicações: classificação de E-mails em spam ou não, reconhecimento de voz, detecção de Fraudes (atividades suspeitas), diagnóstico médico.
+    - Exemplos de Algoritmos: Regressão Logística, Regressão Linear, Redes Neurais.
+  
+- **Aprendizado Não Supervisionado:** não possui rótulos predefinidos o modelo tenta encontrar padrões ou estruturas ocultas nos dados por conta própria.
+  - Exemplo de aplicações: segmentação de clientes, detecção de anomalias, recomendação de produtos.
+  - Exemplos de Algoritmos: por agrupamento (Clustering) algotitmo K-Means.
+
+- **Aprendizado por Reforço:** aprendizado por experiência, envolve um agente que aprende a tomar decisões através da interação com um ambiente.
+   - Exemplo de aplicações: jogos e Robótica.
+   - Exemplos de Algoritmos: Q-Learning, Deep Q-Networks (DQN), Proximal Policy Optimization (PPO), Monte Carlo Methods.
